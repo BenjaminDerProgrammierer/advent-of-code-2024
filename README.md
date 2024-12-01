@@ -1,9 +1,10 @@
 # Advent of Code 2024
 
-![Built with Love Badge](https://forthebadge.com/images/badges/built-with-love.svg)
-[![C# Badge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
-![Visual Studio Code Badge](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-[![forthebadge](https://forthebadge.com/images/badges/it-works-no-idea-why.svg)](https://forthebadge.com)
+![Static Badge](https://img.shields.io/badge/BUILT_WITH-%E2%9D%A4-d15d26?style=for-the-badge&labelColor=e36d25)
+![Static Badge](https://img.shields.io/badge/MADE_WITH-C%23-c0282d?style=for-the-badge&labelColor=ef4041)
+![Static Badge](https://img.shields.io/badge/I_USE-VISUAL_STUDIO_CODE-0078d4?style=for-the-badge&labelColor=004d87)
+
+![Static Badge](https://img.shields.io/badge/IT_WORKS-NO_IDEO_WHY-ff6348?style=for-the-badge&labelColor=3bb371)
 
 ---
 
