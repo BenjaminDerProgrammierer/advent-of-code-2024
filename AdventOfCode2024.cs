@@ -6,7 +6,7 @@
         public static void Main(string[] args)
         {
             Day01.Solve(BASE_PATH + "days/day01/input.txt");
-            // Day02.Solve(BASE_PATH + "days/day02/input.txt");
+            Day02.Solve(BASE_PATH + "days/day02/input.txt");
             // Day03.Solve(BASE_PATH + "days/day03/input.txt");
             // Day04.Solve(BASE_PATH + "days/day04/input.txt");
             // Day05.Solve(BASE_PATH + "days/day05/input.txt");
