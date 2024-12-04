@@ -47,7 +47,6 @@ namespace advent_of_code_2024
                 {
                     int value1 = int.Parse(m.Value.Split("(")[1].Split(",")[0]);
                     int value2 = int.Parse(m.Value.Split(",")[1].Split(")")[0]);
-                    Console.WriteLine("'{0}, {1}' found at index {2}.", value1, value2, m.Index);
                     result += value1 * value2;
                 }
             }
