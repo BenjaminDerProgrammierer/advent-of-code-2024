@@ -16,13 +16,15 @@ namespace advent_of_code_2024
             string pattern = @"mul\(\d+,\d+\)";
             RegexOptions options = RegexOptions.Multiline;
 
-            foreach (Match m in Regex.Matches(input, pattern, options))
-            {
-                //extract the numbers
-                int value1 = int.Parse(m.Value.Split("(")[1].Split(",")[0]);
-                int value2 = int.Parse(m.Value.Split(",")[1].Split(")")[0]);
-                result += value1 * value2;
-            }
+            result = Regex.Matches(input, pattern, options)
+                .Select(m => m.Value)
+                .Select(value => 
+                {
+                    int value1 = int.Parse(value.Split("(")[1].Split(",")[0]);
+                    int value2 = int.Parse(value.Split(",")[1].Split(")")[0]);
+                    return value1 * value2;
+                })
+                .Sum();
             return result;
         }
 

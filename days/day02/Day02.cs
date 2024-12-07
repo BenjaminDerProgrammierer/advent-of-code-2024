@@ -10,20 +10,11 @@ namespace advent_of_code_2024
         }
         public static int Part1(string input)
         {
-            int safes = 0;
-            int[][] reports = input.Split("\n")
+            int safes = input.Split("\n")
                                 .Select(line => line.Split(" ")
                                                     .Select(int.Parse)
                                                     .ToArray())
-                                .ToArray();
-            foreach (int[] level in reports)
-            {
-                if (isSafe(level))
-                {
-                    safes++;
-                }
-            }
-
+                                .Count(level => isSafe(level));
             return safes;
         }
 
