@@ -12,3 +12,5 @@
 ---
 
 My solutions for the Advent of Code 2024 in C#.
+
+IMPORTANT: remove any empty lines in the input files!
