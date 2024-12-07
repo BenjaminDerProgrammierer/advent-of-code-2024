@@ -27,7 +27,6 @@ namespace advent_of_code_2024
                     char c = row[x];
                     if (c == 'X')
                     {
-                        Console.WriteLine($"Found 'X' at ({y}, {x})");
 
                         // search for Ms
                         IEnumerable<int[]> mMatches = GetSurroundingChars(x, y, arr, 'M');
@@ -48,8 +47,6 @@ namespace advent_of_code_2024
                     }
                 }
             }
-
-            Console.WriteLine("------");
             return result;
         }
 
@@ -87,8 +84,6 @@ namespace advent_of_code_2024
                     char c = row[x];
                     if (c == 'A')
                     {
-                        Console.WriteLine($"Found 'A' at ({y}, {x})");
-
                         // search for the pattern
                         if (
                             (
@@ -153,13 +148,12 @@ namespace advent_of_code_2024
             {
                 if (arr[y][x] == searchChar)
                 {
-                    Console.WriteLine($" Found '{searchChar}' at ({x + dx}, {y + dy})");
                     return new int[] { dx, dy };
                 }
             }
-            catch (Exception e)
+            catch (IndexOutOfRangeException)
             {
-                Console.WriteLine(e.Message);
+                // Ignore IndexOutOfRangeException
             }
             return null;
         }
